@@ -47,13 +47,13 @@ val nonce = sc.range(0, trials).mapPartitionsWithIndex((indx, iter) => {
   val rand = new scala.util.Random(indx + seed)
   iter.map(x => rand.nextInt(Int.MaxValue - 1) + 1)
 })
-
+```
 This was changed to:
 ```scala
 val nonce = sc.range(0, trials).mapPartitionsWithIndex((indx, iter) => {
   iter.map(x => x + 1) // Modified line
 })
-
+```
 This design would have both pros and cons:
 **Pros:**
 - **Efficiency:** Less resource-intensive than random generation.
