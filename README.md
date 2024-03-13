@@ -65,17 +65,3 @@ This design would have both pros and cons:
 
 In summary, the deterministic method offers thorough coverage and predictability, ideal for smaller, controlled environments. In contrast, the randomized approach suits large, distributed systems by reducing overlap through independent exploration, albeit with efficiency dependent on luck and variance.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
