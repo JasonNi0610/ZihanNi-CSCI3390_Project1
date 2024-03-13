@@ -54,6 +54,8 @@ val nonce = sc.range(0, trials).mapPartitionsWithIndex((indx, iter) => {
   iter.map(x => x + 1) // Modified line
 })
 ```
+After changing the code, the run time to find Bitcoin, in the difficulty of 7, takes 3000s.
+
 This design would have both pros and cons:
 **Pros:**
 - **Efficiency:** Less resource-intensive than random generation.
